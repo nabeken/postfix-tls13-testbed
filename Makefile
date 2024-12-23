@@ -10,4 +10,4 @@ debian12: ## build debian 12
 
 .PHONY: run-debian12
 run-debian12: ## run debain 12
-	@docker run -it --rm -t local/postfix-tls13-testbed:debian12 run.sh
+	@docker run -it --rm -p 25:25 local/postfix-tls13-testbed:debian12 run.sh
